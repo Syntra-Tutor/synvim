@@ -1,12 +1,20 @@
-# ==============================================================================
-# Makefile: synvim sovereign editor installer
-# ==============================================================================
+# synvim
 
-all:
-	@echo "synvim is a sovereign Neovim text editor."
-	@echo "Run 'make install' or './setup.sh' to deploy to ~/.config/nvim."
+A deliberately small Neovim config: default editing behavior, a monochrome theme, and only the window-management shortcuts you actually need.
 
-install:
-	./setup.sh
+## Included
+- default-ish editor settings
+- terminal mode escape handling
+- split focus navigation via Alt + arrows
+- split swap via Alt + h/j/k/l
+- zoom via Alt + z
+- close via Alt + q / Alt + w
+- terminal splits via Alt + + / Alt + _
 
-.PHONY: all install
+## Install
+
+```bash
+make install
+# or
+./setup.sh
+```
