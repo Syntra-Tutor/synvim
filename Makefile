@@ -1,20 +1,8 @@
-# synvim
+all:
+	@echo "Synvim: minimal Neovim config with window-management shortcuts."
+	@echo "Run 'make install' or './setup.sh' to install."
 
-A deliberately small Neovim config: default editing behavior, a monochrome theme, and only the window-management shortcuts you actually need.
+install:
+	./setup.sh
 
-## Included
-- default-ish editor settings
-- terminal mode escape handling
-- split focus navigation via Alt + arrows
-- split swap via Alt + h/j/k/l
-- zoom via Alt + z
-- close via Alt + q / Alt + w
-- terminal splits via Alt + + / Alt + _
-
-## Install
-
-```bash
-make install
-# or
-./setup.sh
-```
+.PHONY: all install
